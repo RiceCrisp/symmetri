@@ -1,0 +1,142 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+/*
+blue = #1280c4;
+grey = #666;
+light-grey = #797978;
+orange = #f8a600;
+*/
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+div.slideContainer {
+  margin: 0 auto;
+}
+
+section {
+  border-bottom: 1px solid #666;
+}
+
+section.slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 805px) {
+  section.slide > div {
+    flex: none !important;
+    float: left;
+    width: 100%;
+  }
+  section.slide > div.imgHolder {
+    order: 100;
+  }
+}
+
+section.slide div.textHolder {
+  flex: 4;
+  display: flex;
+}
+
+section.slide div.textHolder > div {
+  align-self: center;
+}
+
+section.slide div.imgHolder {
+  flex: 3;
+  min-width: 345px;
+  position: relative;
+}
+
+section.slide div.imgHolder img {
+  float: left;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+
+section h2 {
+  color: #797978;
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+section.slide p.blue {
+  color: #1280c4;
+  font-size: 200%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+section.slide p.blue sup {
+  font-size: 40%;
+}
+
+section.slide p.blue span {
+  display: block;
+  font-size: 550%;
+  line-height: 90%;
+}
+
+section.slide p.small {
+  color: #797978;
+  font-size: 80%;
+}
+
+section.divider {
+  background: #797978 url('img/section_bg_img.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #666;
+  padding: 50px;
+}
+
+section.divider h2 {
+  margin-top: 0;
+}
+
+a.orangeButton {
+  font-size: 90%;
+  text-decoration: none;
+  color: #fff;
+  background: #f8a600;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+a.orangeButton:hover {
+  background: #f87d00;
+  cursor: pointer;
+}
+
+svg.arrow {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+
+svg.plus {
+  position: absolute;
+  width: 20px;
+  height: auto;
+  background: #f8a600;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+svg.plus:hover {
+  background: #f87d00;
+  cursor: pointer;
+}
