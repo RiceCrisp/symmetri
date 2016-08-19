@@ -33,7 +33,6 @@ section.slide {
 @media screen and (max-width: 805px) {
   section.slide > div {
     flex: none !important;
-    float: left;
     width: 100%;
   }
   section.slide > div.imgHolder {
